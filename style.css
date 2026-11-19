@@ -286,3 +286,33 @@ footer {
         min-height: 44px;
     }
 }
+
+
+/* PANTALLAS INDEPENDIENTES EN ORDENADOR Y MOVIL */
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Ocultar todas las secciones excepto la seleccionada */
+
+main section {
+    display: none;
+}
+
+main section.activa {
+    display: block;
+}
+
+/* Mantener el pie de pagina abajo */
+
+footer {
+    margin-top: auto;
+}
