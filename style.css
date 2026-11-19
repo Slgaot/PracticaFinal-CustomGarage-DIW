@@ -179,6 +179,37 @@ footer {
 
 @media (max-width: 600px) {
 
+    body {
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Solo aparece la pantalla seleccionada */
+
+    main section {
+        display: none;
+    }
+
+    main section.activa {
+        display: block;
+    }
+
+    /* El pie queda abajo en pantallas cortas */
+
+    footer {
+        margin-top: auto;
+        padding: 18px;
+        font-size: 14px;
+    }
+
     header {
         display: flex;
         flex-wrap: wrap;
@@ -253,10 +284,5 @@ footer {
 
     .boton {
         min-height: 44px;
-    }
-
-    footer {
-        padding: 18px;
-        font-size: 14px;
     }
 }
