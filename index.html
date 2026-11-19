@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Garage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CUSTOM GARAGE</h1>
+
+        <button class="menu-btn" id="menuBtn"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="menu">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#motos">Motos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <img class="logo"
+                 src="imagenes/principal.jpg"
+                 alt="Logo de Custom Garage">
+
+            <h2>Bienvenido a Custom Garage</h2>
+            <p>Somos un taller dedicado a las motos custom.</p>
+            <p>Nos gusta personalizar motos y darles un estilo único.</p>
+
+            <a class="boton" href="#motos">Ver motos</a>
+        </section>
+
+        <section id="motos">
+            <h2>Nuestras motos</h2>
+
+            <div class="contenedor-motos">
+
+                <article class="moto">
+                    <img src="imagenes/bobber.jpg"
+                         alt="Moto Bobber">
+                    <h3>Bobber</h3>
+                    <p>Una moto sencilla con estilo clásico.</p>
+                </article>
+
+                <article class="moto">
+                    <img src="imagenes/chopper.jpg"
+                         alt="Moto Chopper">
+                    <h3>Chopper</h3>
+                    <p>Una moto custom con un diseño diferente.</p>
+                </article>
+
+                <article class="moto">
+                    <img src="imagenes/cruiser.jpg"
+                         alt="Moto Cruiser">
+                    <h3>Cruiser</h3>
+                    <p>Una moto cómoda para disfrutar de la carretera.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Quieres personalizar tu moto? Contacta con nosotros.</p>
+
+            <form id="formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre"
+                       placeholder="Nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo"
+                       placeholder="Correo electrónico" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje"
+                          placeholder="Mensaje" required></textarea>
+
+                <button type="submit" class="boton">Enviar</button>
+                <p id="respuesta" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Custom Garage - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

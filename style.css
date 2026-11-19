@@ -1,0 +1,262 @@
+
+/* COLORES Y ESTILO GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F1E9;
+    color: #292929;
+}
+
+h1, h2, h3 {
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+/* CABECERA */
+
+header {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 10px 0 20px;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #D49A77;
+}
+
+.menu-btn {
+    display: none;
+}
+
+/* SECCIONES */
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 24px;
+}
+
+#inicio {
+    padding-top: 40px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 525px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 35px;
+}
+
+#inicio p {
+    line-height: 1.6;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    background-color: #9A4F28;
+    color: white;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.boton:hover {
+    background-color: #783C1F;
+}
+
+/* MOTOS */
+
+.contenedor-motos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 950px;
+    margin: 20px auto;
+}
+
+.moto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.moto img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.moto h3 {
+    font-size: 18px;
+}
+
+.moto p {
+    line-height: 1.4;
+}
+
+/* CONTACTO */
+
+#contacto form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin: 12px 0 5px;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+#respuesta {
+    font-size: 14px;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* VERSION PARA MOVIL */
+
+@media (max-width: 600px) {
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .menu-btn {
+        display: block;
+        background: none;
+        color: white;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 5px 10px;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 15px;
+    }
+
+    nav.abierto {
+        display: flex;
+    }
+
+    nav a {
+        padding: 14px;
+        border-top: 1px solid #555;
+    }
+
+    section {
+        padding: 35px 18px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .contenedor-motos {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .moto {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .moto img {
+        height: 180px;
+    }
+
+    #contacto form {
+        width: 100%;
+    }
+
+    .boton {
+        min-height: 44px;
+    }
+
+    footer {
+        padding: 18px;
+        font-size: 14px;
+    }
+}
